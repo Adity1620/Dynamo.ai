@@ -25,6 +25,7 @@ This solution is designed to boost productivity, improve decision-making, and en
 - **Google Text-to-Speech (gTTS)** (for audio responses)
 - **Deep Translator** (for multi-lingual support)
 - **Langchain** (for language model integrations)
+- **Experience Dynamo.ai** - https://dynamo-ai.streamlit.app/
 
 ## Installation
 
