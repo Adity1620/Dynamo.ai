@@ -77,7 +77,7 @@ We welcome contributions to improve the functionality and performance of the app
 2. **Ananth Shyam S**
 3. **Avinash M**
 4. **CH SriCheran**
-5. **Sajan A**
+5. **SAJAN A**
 
 ## License
 
