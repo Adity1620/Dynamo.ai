@@ -17,14 +17,14 @@ This solution is designed to boost productivity, improve decision-making, and en
 
 ## Technologies Used
 
-- **LLAMA 3.1** (for RAG-powered chatbot)
+- **LLAMA 3.1** (for RAG-powered chatbot (LLM))
 - **Streamlit** (for front-end development)
 - **Gmail SMTP** (for two-factor authentication)
 - **Pydantic** (for data validation)
 - **TensorFlow** (for machine learning models)
 - **Google Text-to-Speech (gTTS)** (for audio responses)
 - **Deep Translator** (for multi-lingual support)
-- **Langchain** (for language model integrations)
+- **LlamaIndex** (for RAG framework)
  
 ## Experience Dynamo.ai : 
 https://dynamo-ai.streamlit.app/
