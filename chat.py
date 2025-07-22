@@ -218,9 +218,10 @@ def chatbot_interface():
         st.success(f"✅ Loaded {len(documents)} document(s).")
 
     # Set up Together LLM API and embeddings
-    api_key = 'dd0fd0c2e4d007fb0deb98a42b41824008a87eb02b716e1eee6a32551253ba9d'
-    llm = TogetherLLM(model="meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo", api_key=api_key)
-    embeddings = HuggingFaceInferenceAPIEmbeddings(api_key='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', model_name="sentence-transformers/all-mpnet-base-v2")
+    together_api_key = st.secrets["general"]["TOGETHER_API_KEY"]
+    hf_api_key = st.secrets["general"]["HF_API_KEY"]
+    llm = TogetherLLM(model="meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo", api_key=together_api_key)
+    embeddings = HuggingFaceInferenceAPIEmbeddings(api_key=hf_api_key, model_name="sentence-transformers/all-mpnet-base-v2")
 
     if st.button("🔄 Process Documents") and documents:
         with st.spinner('Processing...'):
