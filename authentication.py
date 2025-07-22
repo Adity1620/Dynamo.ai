@@ -8,6 +8,7 @@ from email.mime.text import MIMEText
 from document_processing import generate_otp, send_otp_email
 from utils import load_login_data
 
+mail_id_key = st.secrets["general"]["MAIL_KEY"]
 
 def login():
     st.title("🔑 Login")
@@ -31,7 +32,7 @@ def login():
                 st.session_state.username = username
                 st.session_state.role = user['role']
                 st.session_state.otp = generate_otp()
-                send_otp_email("teamaraycci@gmail.com", "popb atyu fjhw dtqu", username, st.session_state.otp)
+                send_otp_email("teamaraycci@gmail.com", mail_id_key, username, st.session_state.otp)
                 st.session_state.stage = "otp_verification"
                 
                 # Initialize user-specific chat history if it doesn't exist
